@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>dispositivos_electronicos</class>
+ <widget class="QMainWindow" name="dispositivos_electronicos">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>786</width>
+    <height>429</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>dispositivos_electronicos</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" colspan="3">
+     <widget class="QLabel" name="label">
+      <property name="font">
+       <font>
+        <pointsize>16</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:700; color:#ff0000;&quot;&gt;Tienda de Dispositivos Electrónicos&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Dispositivos Disponibles</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Dispositivos Seleccionados</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QTreeWidget" name="tablaDisponibles">
+      <column>
+       <property name="text">
+        <string>ID</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Nombre</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Precio</string>
+       </property>
+      </column>
+      <item>
+       <property name="text">
+        <string>1</string>
+       </property>
+       <property name="text">
+        <string>Audifonos</string>
+       </property>
+       <property name="text">
+        <string>7.50</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>2</string>
+       </property>
+       <property name="text">
+        <string>Cargador </string>
+       </property>
+       <property name="text">
+        <string>5</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>3</string>
+       </property>
+       <property name="text">
+        <string>USB 32GB</string>
+       </property>
+       <property name="text">
+        <string>8.50</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>4</string>
+       </property>
+       <property name="text">
+        <string>Monitor</string>
+       </property>
+       <property name="text">
+        <string>50</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>5</string>
+       </property>
+       <property name="text">
+        <string>Laptop</string>
+       </property>
+       <property name="text">
+        <string>500</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>6</string>
+       </property>
+       <property name="text">
+        <string>Mouse</string>
+       </property>
+       <property name="text">
+        <string>12.75</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="btnAgregar">
+      <property name="text">
+       <string>Agregar</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QListWidget" name="listWidget"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>786</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAplicacion_CRUD">
+    <property name="title">
+     <string>Aplicacion CRUD</string>
+    </property>
+   </widget>
+   <addaction name="menuAplicacion_CRUD"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

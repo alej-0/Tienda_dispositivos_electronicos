@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-8a8cd6c54a8e2823385c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "Tienda_dispositivos_electronicos",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "Tienda_dispositivos_electronicos::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Tienda_dispositivos_electronicos-Debug-1c5ea79d141e9235034a.json",
+					"name" : "Tienda_dispositivos_electronicos",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Tienda_dispositivos_electronicos_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Tienda_dispositivos_electronicos_autogen-Debug-59691c6cbb3cbb62331d.json",
+					"name" : "Tienda_dispositivos_electronicos_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Tienda_dispositivos_electronicos_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Tienda_dispositivos_electronicos_autogen_timestamp_deps-Debug-a45e130a8d54f22c167c.json",
+					"name" : "Tienda_dispositivos_electronicos_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "E:/Qt Creator/Proyecto Programacion/Tienda_dispositivos_electronicos/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug",
+		"source" : "E:/Qt Creator/Proyecto Programacion/Tienda_dispositivos_electronicos"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
