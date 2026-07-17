@@ -18,7 +18,7 @@ set(PROJECT_SOURCES
         dispositivos_electronicos.h
         dispositivos_electronicos.ui
 )
-
+ 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(Tienda_dispositivos_electronicos
         MANUAL_FINALIZATION

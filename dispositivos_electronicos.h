@@ -20,6 +20,10 @@ public:
 private slots:
     void on_btnAgregar_clicked();
 
+    void on_btncalcular_clicked();
+
+    void on_btnpagar_clicked();
+
 private:
     Ui::dispositivos_electronicos *ui;
 };

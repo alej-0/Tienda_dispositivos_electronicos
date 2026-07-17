@@ -44,19 +44,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = E:\QtCreator\Qt\Tools\CMake_64\bin\cmake.exe
+CMAKE_COMMAND = C:\Qt\Tools\CMake_64\bin\cmake.exe
 
 # The command to remove a file.
-RM = E:\QtCreator\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f
+RM = C:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "E:\Qt Creator\Proyecto Programacion\Tienda_dispositivos_electronicos"
+CMAKE_SOURCE_DIR = "C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "E:\Qt Creator\Proyecto Programacion\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug"
+CMAKE_BINARY_DIR = "C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug"
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -79,18 +79,18 @@ clean: CMakeFiles/Tienda_dispositivos_electronicos_autogen.dir/clean
 # Target rules for target CMakeFiles/Tienda_dispositivos_electronicos.dir
 
 # All Build rule for target.
-CMakeFiles/Tienda_dispositivos_electronicos.dir/all: CMakeFiles/Tienda_dispositivos_electronicos_autogen_timestamp_deps.dir/all
 CMakeFiles/Tienda_dispositivos_electronicos.dir/all: CMakeFiles/Tienda_dispositivos_electronicos_autogen.dir/all
+CMakeFiles/Tienda_dispositivos_electronicos.dir/all: CMakeFiles/Tienda_dispositivos_electronicos_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tienda_dispositivos_electronicos.dir\build.make CMakeFiles/Tienda_dispositivos_electronicos.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tienda_dispositivos_electronicos.dir\build.make CMakeFiles/Tienda_dispositivos_electronicos.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="E:\Qt Creator\Proyecto Programacion\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles" --progress-num=1,2,3,4,5 "Built target Tienda_dispositivos_electronicos"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles" --progress-num=1,2,3,4,5 "Built target Tienda_dispositivos_electronicos"
 .PHONY : CMakeFiles/Tienda_dispositivos_electronicos.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Tienda_dispositivos_electronicos.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "E:\Qt Creator\Proyecto Programacion\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles" 6
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles" 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Tienda_dispositivos_electronicos.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "E:\Qt Creator\Proyecto Programacion\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles" 0
 .PHONY : CMakeFiles/Tienda_dispositivos_electronicos.dir/rule
 
 # Convenience name for target.
@@ -109,14 +109,14 @@ CMakeFiles/Tienda_dispositivos_electronicos.dir/clean:
 CMakeFiles/Tienda_dispositivos_electronicos_autogen_timestamp_deps.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tienda_dispositivos_electronicos_autogen_timestamp_deps.dir\build.make CMakeFiles/Tienda_dispositivos_electronicos_autogen_timestamp_deps.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tienda_dispositivos_electronicos_autogen_timestamp_deps.dir\build.make CMakeFiles/Tienda_dispositivos_electronicos_autogen_timestamp_deps.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="E:\Qt Creator\Proyecto Programacion\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles" --progress-num= "Built target Tienda_dispositivos_electronicos_autogen_timestamp_deps"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles" --progress-num= "Built target Tienda_dispositivos_electronicos_autogen_timestamp_deps"
 .PHONY : CMakeFiles/Tienda_dispositivos_electronicos_autogen_timestamp_deps.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Tienda_dispositivos_electronicos_autogen_timestamp_deps.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "E:\Qt Creator\Proyecto Programacion\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles" 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Tienda_dispositivos_electronicos_autogen_timestamp_deps.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "E:\Qt Creator\Proyecto Programacion\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles" 0
 .PHONY : CMakeFiles/Tienda_dispositivos_electronicos_autogen_timestamp_deps.dir/rule
 
 # Convenience name for target.
@@ -135,14 +135,14 @@ CMakeFiles/Tienda_dispositivos_electronicos_autogen_timestamp_deps.dir/clean:
 CMakeFiles/Tienda_dispositivos_electronicos_autogen.dir/all: CMakeFiles/Tienda_dispositivos_electronicos_autogen_timestamp_deps.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tienda_dispositivos_electronicos_autogen.dir\build.make CMakeFiles/Tienda_dispositivos_electronicos_autogen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Tienda_dispositivos_electronicos_autogen.dir\build.make CMakeFiles/Tienda_dispositivos_electronicos_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="E:\Qt Creator\Proyecto Programacion\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles" --progress-num=6 "Built target Tienda_dispositivos_electronicos_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles" --progress-num=6 "Built target Tienda_dispositivos_electronicos_autogen"
 .PHONY : CMakeFiles/Tienda_dispositivos_electronicos_autogen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Tienda_dispositivos_electronicos_autogen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "E:\Qt Creator\Proyecto Programacion\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles" 1
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles" 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Tienda_dispositivos_electronicos_autogen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "E:\Qt Creator\Proyecto Programacion\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles" 0
 .PHONY : CMakeFiles/Tienda_dispositivos_electronicos_autogen.dir/rule
 
 # Convenience name for target.

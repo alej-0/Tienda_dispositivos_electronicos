@@ -15,7 +15,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/QtCreator/Qt/Tools/mingw1310_64/bin/addr2line.exe"
+			"value" : "C:/Qt/Tools/mingw1310_64/bin/addr2line.exe"
 		},
 		{
 			"name" : "CMAKE_AR",
@@ -31,7 +31,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/QtCreator/Qt/Tools/mingw1310_64/bin/ar.exe"
+			"value" : "C:/Qt/Tools/mingw1310_64/bin/ar.exe"
 		},
 		{
 			"name" : "CMAKE_BUILD_TYPE",
@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "e:/Qt Creator/Proyecto Programacion/Tienda_dispositivos_electronicos/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug"
+			"value" : "c:/Users/hp/Documents/Archivos Gabriel/Tienda_dispositivos_electronicos/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -131,7 +131,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/QtCreator/Qt/Tools/CMake_64/bin/cmake.exe"
+			"value" : "C:/Qt/Tools/CMake_64/bin/cmake.exe"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -143,7 +143,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/QtCreator/Qt/Tools/CMake_64/bin/cpack.exe"
+			"value" : "C:/Qt/Tools/CMake_64/bin/cpack.exe"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -155,7 +155,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/QtCreator/Qt/Tools/CMake_64/bin/ctest.exe"
+			"value" : "C:/Qt/Tools/CMake_64/bin/ctest.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -171,7 +171,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "E:/QtCreator/Qt/Tools/mingw1310_64/bin/g++.exe"
+			"value" : "C:/Qt/Tools/mingw1310_64/bin/g++.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -187,7 +187,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/QtCreator/Qt/Tools/mingw1310_64/bin/gcc-ar.exe"
+			"value" : "C:/Qt/Tools/mingw1310_64/bin/gcc-ar.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_RANLIB",
@@ -203,7 +203,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/QtCreator/Qt/Tools/mingw1310_64/bin/gcc-ranlib.exe"
+			"value" : "C:/Qt/Tools/mingw1310_64/bin/gcc-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -323,7 +323,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/QtCreator/Qt/Tools/mingw1310_64/bin/gcc.exe"
+			"value" : "C:/Qt/Tools/mingw1310_64/bin/gcc.exe"
 		},
 		{
 			"name" : "CMAKE_C_OUTPUT_EXTENSION",
@@ -351,7 +351,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/QtCreator/Qt/Tools/mingw1310_64/bin/dlltool.exe"
+			"value" : "C:/Qt/Tools/mingw1310_64/bin/dlltool.exe"
 		},
 		{
 			"name" : "CMAKE_EDIT_COMMAND",
@@ -363,7 +363,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/QtCreator/Qt/Tools/CMake_64/bin/cmake-gui.exe"
+			"value" : "C:/Qt/Tools/CMake_64/bin/cmake-gui.exe"
 		},
 		{
 			"name" : "CMAKE_EXECUTABLE_FORMAT",
@@ -467,7 +467,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/Qt Creator/Proyecto Programacion/Tienda_dispositivos_electronicos/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/hp/Documents/Archivos Gabriel/Tienda_dispositivos_electronicos/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -551,7 +551,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/Qt Creator/Proyecto Programacion/Tienda_dispositivos_electronicos"
+			"value" : "C:/Users/hp/Documents/Archivos Gabriel/Tienda_dispositivos_electronicos"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -835,7 +835,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/QtCreator/Qt/Tools/mingw1310_64/bin/ld.exe"
+			"value" : "C:/Qt/Tools/mingw1310_64/bin/ld.exe"
 		},
 		{
 			"name" : "CMAKE_MAKE_PROGRAM",
@@ -851,7 +851,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/QtCreator/Qt/Tools/mingw1310_64/bin/mingw32-make.exe"
+			"value" : "C:/Qt/Tools/mingw1310_64/bin/mingw32-make.exe"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -947,7 +947,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/QtCreator/Qt/Tools/mingw1310_64/bin/nm.exe"
+			"value" : "C:/Qt/Tools/mingw1310_64/bin/nm.exe"
 		},
 		{
 			"name" : "CMAKE_NUMBER_OF_MAKEFILES",
@@ -975,7 +975,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/QtCreator/Qt/Tools/mingw1310_64/bin/objcopy.exe"
+			"value" : "C:/Qt/Tools/mingw1310_64/bin/objcopy.exe"
 		},
 		{
 			"name" : "CMAKE_OBJDUMP",
@@ -991,7 +991,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/QtCreator/Qt/Tools/mingw1310_64/bin/objdump.exe"
+			"value" : "C:/Qt/Tools/mingw1310_64/bin/objdump.exe"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -1015,7 +1015,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "E:/QtCreator/Qt/6.11.1/mingw_64"
+			"value" : "C:/Qt/6.11.1/mingw_64"
 		},
 		{
 			"name" : "CMAKE_PROJECT_DESCRIPTION",
@@ -1051,7 +1051,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/Qt Creator/Proyecto Programacion/Tienda_dispositivos_electronicos/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/.qtcreator/cmake-helper/qtcreator-project.cmake"
+			"value" : "C:/Users/hp/Documents/Archivos Gabriel/Tienda_dispositivos_electronicos/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/.qtcreator/cmake-helper/qtcreator-project.cmake"
 		},
 		{
 			"name" : "CMAKE_PROJECT_NAME",
@@ -1139,7 +1139,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/QtCreator/Qt/Tools/mingw1310_64/bin/ranlib.exe"
+			"value" : "C:/Qt/Tools/mingw1310_64/bin/ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_RC_COMPILER",
@@ -1155,7 +1155,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/QtCreator/Qt/Tools/mingw1310_64/bin/windres.exe"
+			"value" : "C:/Qt/Tools/mingw1310_64/bin/windres.exe"
 		},
 		{
 			"name" : "CMAKE_RC_COMPILER_WORKS",
@@ -1263,7 +1263,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/QtCreator/Qt/Tools/mingw1310_64/bin/readelf.exe"
+			"value" : "C:/Qt/Tools/mingw1310_64/bin/readelf.exe"
 		},
 		{
 			"name" : "CMAKE_ROOT",
@@ -1275,7 +1275,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/QtCreator/Qt/Tools/CMake_64/share/cmake-3.30"
+			"value" : "C:/Qt/Tools/CMake_64/share/cmake-3.30"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1483,7 +1483,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/QtCreator/Qt/Tools/mingw1310_64/bin/strip.exe"
+			"value" : "C:/Qt/Tools/mingw1310_64/bin/strip.exe"
 		},
 		{
 			"name" : "CMAKE_TAPI",
@@ -1551,7 +1551,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/Qt Creator/Proyecto Programacion/Tienda_dispositivos_electronicos/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/.qtcreator/cmake-helper"
+			"value" : "C:/Users/hp/Documents/Archivos Gabriel/Tienda_dispositivos_electronicos/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/.qtcreator/cmake-helper"
 		},
 		{
 			"name" : "QT_ADDITIONAL_HOST_PACKAGES_PREFIX_PATH",
@@ -1623,7 +1623,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "E:/QtCreator/Qt/6.11.1/mingw_64/lib/cmake/Qt6"
+			"value" : "C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6"
 		},
 		{
 			"name" : "QT_ENABLE_QML_DEBUG",
@@ -1635,7 +1635,7 @@
 				}
 			],
 			"type" : "BOOL",
-			"value" : "ON"
+			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_abstractbutton",
@@ -6663,7 +6663,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/QtCreator/Qt/6.11.1/mingw_64/bin/qmake.exe"
+			"value" : "C:/Qt/6.11.1/mingw_64/bin/qmake.exe"
 		},
 		{
 			"name" : "Qt6CoreTools_DIR",
@@ -6675,7 +6675,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "E:/QtCreator/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools"
+			"value" : "C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6CoreTools"
 		},
 		{
 			"name" : "Qt6Core_DIR",
@@ -6687,7 +6687,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "E:/QtCreator/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core"
+			"value" : "C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Core"
 		},
 		{
 			"name" : "Qt6EntryPointPrivate_DIR",
@@ -6699,7 +6699,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "E:/QtCreator/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate"
+			"value" : "C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6EntryPointPrivate"
 		},
 		{
 			"name" : "Qt6GuiTools_DIR",
@@ -6711,7 +6711,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "E:/QtCreator/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools"
+			"value" : "C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6GuiTools"
 		},
 		{
 			"name" : "Qt6Gui_DIR",
@@ -6723,7 +6723,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "E:/QtCreator/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui"
+			"value" : "C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Gui"
 		},
 		{
 			"name" : "Qt6WidgetsTools_DIR",
@@ -6735,7 +6735,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "E:/QtCreator/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools"
+			"value" : "C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6WidgetsTools"
 		},
 		{
 			"name" : "Qt6Widgets_DIR",
@@ -6747,7 +6747,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "E:/QtCreator/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets"
+			"value" : "C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6Widgets"
 		},
 		{
 			"name" : "Qt6_DIR",
@@ -6759,7 +6759,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "E:/QtCreator/Qt/6.11.1/mingw_64/lib/cmake/Qt6"
+			"value" : "C:/Qt/6.11.1/mingw_64/lib/cmake/Qt6"
 		},
 		{
 			"name" : "Tienda_dispositivos_electronicos_BINARY_DIR",
@@ -6771,7 +6771,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/Qt Creator/Proyecto Programacion/Tienda_dispositivos_electronicos/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug"
+			"value" : "C:/Users/hp/Documents/Archivos Gabriel/Tienda_dispositivos_electronicos/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug"
 		},
 		{
 			"name" : "Tienda_dispositivos_electronicos_IS_TOP_LEVEL",
@@ -6795,7 +6795,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/Qt Creator/Proyecto Programacion/Tienda_dispositivos_electronicos"
+			"value" : "C:/Users/hp/Documents/Archivos Gabriel/Tienda_dispositivos_electronicos"
 		},
 		{
 			"name" : "Vulkan_GLSLANG_VALIDATOR_EXECUTABLE",
@@ -6871,7 +6871,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "E:/QtCreator/Qt/6.11.1/mingw_64/bin/windeployqt.exe"
+			"value" : "C:/Qt/6.11.1/mingw_64/bin/windeployqt.exe"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
