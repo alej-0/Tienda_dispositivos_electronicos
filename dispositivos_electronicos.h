@@ -24,7 +24,12 @@ private slots:
 
     void on_btnpagar_clicked();
 
+    void on_btnCrear_clicked();
+
+    void on_btnEliminar_clicked();
+
 private:
     Ui::dispositivos_electronicos *ui;
+    void cargarInventario();
 };
 #endif // DISPOSITIVOS_ELECTRONICOS_H

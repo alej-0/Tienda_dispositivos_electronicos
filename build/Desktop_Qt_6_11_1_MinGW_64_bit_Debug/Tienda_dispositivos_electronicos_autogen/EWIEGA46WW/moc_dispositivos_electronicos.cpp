@@ -42,7 +42,9 @@ template <> constexpr inline auto dispositivos_electronicos::qt_create_metaobjec
         "on_btnAgregar_clicked",
         "",
         "on_btncalcular_clicked",
-        "on_btnpagar_clicked"
+        "on_btnpagar_clicked",
+        "on_btnCrear_clicked",
+        "on_btnEliminar_clicked"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -52,6 +54,10 @@ template <> constexpr inline auto dispositivos_electronicos::qt_create_metaobjec
         QtMocHelpers::SlotData<void()>(3, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'on_btnpagar_clicked'
         QtMocHelpers::SlotData<void()>(4, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_btnCrear_clicked'
+        QtMocHelpers::SlotData<void()>(5, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_btnEliminar_clicked'
+        QtMocHelpers::SlotData<void()>(6, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -78,6 +84,8 @@ void dispositivos_electronicos::qt_static_metacall(QObject *_o, QMetaObject::Cal
         case 0: _t->on_btnAgregar_clicked(); break;
         case 1: _t->on_btncalcular_clicked(); break;
         case 2: _t->on_btnpagar_clicked(); break;
+        case 3: _t->on_btnCrear_clicked(); break;
+        case 4: _t->on_btnEliminar_clicked(); break;
         default: ;
         }
     }
@@ -103,14 +111,14 @@ int dispositivos_electronicos::qt_metacall(QMetaObject::Call _c, int _id, void *
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 3)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 3;
+        _id -= 5;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 3)
+        if (_id < 5)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 3;
+        _id -= 5;
     }
     return _id;
 }

@@ -1,0 +1,14 @@
+1,Accesorios,Cable USB-C Carga Rapida,5
+2,Audio,Audifonos Bluetooth In-Ear,25
+3,Almacenamiento,Memoria USB 64GB Kingston,12
+4,Perifericos,Mouse Inalambrico Logitech,15
+5,Perifericos,Teclado Mecanico Redragon,45
+6,Accesorios,Cargador de Pared 67W,20
+7,Pantallas,Monitor Samsung 24 FHD,140
+8,Telefonia,Smartphone Poco F4 GT,450
+9,Computacion,Laptop HP con Ryzen 5,650
+10,Almacenamiento,Disco Duro Externo 1TB,65
+12,Wearables,Smartwatch Xiaomi Band 8,55
+13,Accesorios,Bateria Portatil 10000mAh,25
+14,Redes,Router Wi-Fi TP-Link,30
+15,Oficina,Impresora Multifuncion Epson,21016,Iluminacion,Focos Recargables,7

@@ -15,6 +15,7 @@
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QListWidget>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
@@ -33,17 +34,28 @@ public:
     QFrame *line;
     QTabWidget *CRUD;
     QWidget *Articulos;
-    QLabel *label;
     QTreeWidget *tablaDisponibles;
     QListWidget *listWidget;
     QLabel *label_2;
     QLabel *label_3;
     QPushButton *btnAgregar;
+    QPushButton *btnCrear;
+    QLabel *label;
+    QLineEdit *txtIdEliminar;
+    QPushButton *btnEliminar;
+    QWidget *tab_3;
+    QLabel *label_4;
+    QLabel *label_5;
+    QLabel *label_6;
+    QLabel *label_7;
+    QLineEdit *txtId;
+    QLineEdit *txtCategoria;
+    QLineEdit *txtModelo;
+    QLineEdit *txtPrecio;
     QWidget *tab_4;
     QPushButton *btncalcular;
     QLabel *lbltotal;
     QPushButton *btnpagar;
-    QWidget *tab_3;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *dispositivos_electronicos)
@@ -61,19 +73,12 @@ public:
         line->setFrameShape(QFrame::Shape::HLine);
         line->setFrameShadow(QFrame::Shadow::Sunken);
 
-        gridLayout->addWidget(line, 2, 0, 1, 1);
+        gridLayout->addWidget(line, 4, 0, 2, 1);
 
         CRUD = new QTabWidget(centralwidget);
         CRUD->setObjectName("CRUD");
         Articulos = new QWidget();
         Articulos->setObjectName("Articulos");
-        label = new QLabel(Articulos);
-        label->setObjectName("label");
-        label->setGeometry(QRect(-30, 0, 762, 28));
-        QFont font;
-        font.setPointSize(16);
-        font.setBold(true);
-        label->setFont(font);
         tablaDisponibles = new QTreeWidget(Articulos);
         new QTreeWidgetItem(tablaDisponibles);
         new QTreeWidgetItem(tablaDisponibles);
@@ -104,24 +109,64 @@ public:
         btnAgregar = new QPushButton(Articulos);
         btnAgregar->setObjectName("btnAgregar");
         btnAgregar->setGeometry(QRect(350, 270, 71, 31));
+        btnCrear = new QPushButton(Articulos);
+        btnCrear->setObjectName("btnCrear");
+        btnCrear->setGeometry(QRect(0, 260, 51, 21));
+        label = new QLabel(Articulos);
+        label->setObjectName("label");
+        label->setGeometry(QRect(-10, 0, 768, 28));
+        QFont font;
+        font.setPointSize(16);
+        font.setBold(true);
+        label->setFont(font);
+        txtIdEliminar = new QLineEdit(Articulos);
+        txtIdEliminar->setObjectName("txtIdEliminar");
+        txtIdEliminar->setGeometry(QRect(90, 300, 113, 22));
+        btnEliminar = new QPushButton(Articulos);
+        btnEliminar->setObjectName("btnEliminar");
+        btnEliminar->setGeometry(QRect(0, 300, 75, 24));
         CRUD->addTab(Articulos, QString());
+        tab_3 = new QWidget();
+        tab_3->setObjectName("tab_3");
+        label_4 = new QLabel(tab_3);
+        label_4->setObjectName("label_4");
+        label_4->setGeometry(QRect(180, 80, 81, 16));
+        label_5 = new QLabel(tab_3);
+        label_5->setObjectName("label_5");
+        label_5->setGeometry(QRect(190, 120, 61, 16));
+        label_6 = new QLabel(tab_3);
+        label_6->setObjectName("label_6");
+        label_6->setGeometry(QRect(200, 180, 61, 16));
+        label_7 = new QLabel(tab_3);
+        label_7->setObjectName("label_7");
+        label_7->setGeometry(QRect(200, 230, 61, 16));
+        txtId = new QLineEdit(tab_3);
+        txtId->setObjectName("txtId");
+        txtId->setGeometry(QRect(310, 80, 113, 22));
+        txtCategoria = new QLineEdit(tab_3);
+        txtCategoria->setObjectName("txtCategoria");
+        txtCategoria->setGeometry(QRect(310, 120, 113, 22));
+        txtModelo = new QLineEdit(tab_3);
+        txtModelo->setObjectName("txtModelo");
+        txtModelo->setGeometry(QRect(310, 170, 113, 22));
+        txtPrecio = new QLineEdit(tab_3);
+        txtPrecio->setObjectName("txtPrecio");
+        txtPrecio->setGeometry(QRect(310, 220, 113, 22));
+        CRUD->addTab(tab_3, QString());
         tab_4 = new QWidget();
         tab_4->setObjectName("tab_4");
         btncalcular = new QPushButton(tab_4);
         btncalcular->setObjectName("btncalcular");
-        btncalcular->setGeometry(QRect(50, 20, 91, 24));
+        btncalcular->setGeometry(QRect(180, 70, 91, 24));
         lbltotal = new QLabel(tab_4);
         lbltotal->setObjectName("lbltotal");
-        lbltotal->setGeometry(QRect(80, 100, 101, 21));
+        lbltotal->setGeometry(QRect(340, 70, 101, 21));
         btnpagar = new QPushButton(tab_4);
         btnpagar->setObjectName("btnpagar");
-        btnpagar->setGeometry(QRect(60, 160, 75, 24));
+        btnpagar->setGeometry(QRect(250, 140, 75, 24));
         CRUD->addTab(tab_4, QString());
-        tab_3 = new QWidget();
-        tab_3->setObjectName("tab_3");
-        CRUD->addTab(tab_3, QString());
 
-        gridLayout->addWidget(CRUD, 3, 0, 1, 1);
+        gridLayout->addWidget(CRUD, 1, 0, 1, 1);
 
         dispositivos_electronicos->setCentralWidget(centralwidget);
         statusbar = new QStatusBar(dispositivos_electronicos);
@@ -130,7 +175,7 @@ public:
 
         retranslateUi(dispositivos_electronicos);
 
-        CRUD->setCurrentIndex(1);
+        CRUD->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(dispositivos_electronicos);
@@ -139,7 +184,6 @@ public:
     void retranslateUi(QMainWindow *dispositivos_electronicos)
     {
         dispositivos_electronicos->setWindowTitle(QCoreApplication::translate("dispositivos_electronicos", "dispositivos_electronicos", nullptr));
-        label->setText(QCoreApplication::translate("dispositivos_electronicos", "<html><head/><body><p align=\"center\"><span style=\" font-weight:700; color:#ff0000;\">Tienda de Dispositivos Electr\303\263nicos</span></p></body></html>", nullptr));
         QTreeWidgetItem *___qtreewidgetitem = tablaDisponibles->headerItem();
         ___qtreewidgetitem->setText(3, QCoreApplication::translate("dispositivos_electronicos", "Precio", nullptr));
         ___qtreewidgetitem->setText(2, QCoreApplication::translate("dispositivos_electronicos", "Modelo", nullptr));
@@ -228,12 +272,19 @@ public:
         label_2->setText(QCoreApplication::translate("dispositivos_electronicos", "Dispositivos Disponibles", nullptr));
         label_3->setText(QCoreApplication::translate("dispositivos_electronicos", "Dispositivos Seleccionados", nullptr));
         btnAgregar->setText(QCoreApplication::translate("dispositivos_electronicos", "Agregar", nullptr));
+        btnCrear->setText(QCoreApplication::translate("dispositivos_electronicos", "Crear", nullptr));
+        label->setText(QCoreApplication::translate("dispositivos_electronicos", "<html><head/><body><p align=\"center\"><span style=\" font-weight:700; color:#ff0000;\">Tienda de Dispositivos Electr\303\263nicos</span></p></body></html>", nullptr));
+        btnEliminar->setText(QCoreApplication::translate("dispositivos_electronicos", "Eliminar", nullptr));
         CRUD->setTabText(CRUD->indexOf(Articulos), QCoreApplication::translate("dispositivos_electronicos", "Tab 1", nullptr));
+        label_4->setText(QCoreApplication::translate("dispositivos_electronicos", "ID del Producto", nullptr));
+        label_5->setText(QCoreApplication::translate("dispositivos_electronicos", "Categor\303\255a", nullptr));
+        label_6->setText(QCoreApplication::translate("dispositivos_electronicos", "Modelo", nullptr));
+        label_7->setText(QCoreApplication::translate("dispositivos_electronicos", "Precio", nullptr));
+        CRUD->setTabText(CRUD->indexOf(tab_3), QCoreApplication::translate("dispositivos_electronicos", "Page", nullptr));
         btncalcular->setText(QCoreApplication::translate("dispositivos_electronicos", "Calcular  Total", nullptr));
         lbltotal->setText(QCoreApplication::translate("dispositivos_electronicos", "Valor de pago", nullptr));
         btnpagar->setText(QCoreApplication::translate("dispositivos_electronicos", "Pagar", nullptr));
         CRUD->setTabText(CRUD->indexOf(tab_4), QCoreApplication::translate("dispositivos_electronicos", "Tab 2", nullptr));
-        CRUD->setTabText(CRUD->indexOf(tab_3), QCoreApplication::translate("dispositivos_electronicos", "Page", nullptr));
     } // retranslateUi
 
 };
