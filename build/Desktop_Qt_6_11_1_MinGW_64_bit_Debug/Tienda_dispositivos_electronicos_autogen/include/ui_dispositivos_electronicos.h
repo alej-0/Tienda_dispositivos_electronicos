@@ -39,7 +39,6 @@ public:
     QLabel *label_2;
     QLabel *label_3;
     QPushButton *btnAgregar;
-    QPushButton *btnCrear;
     QLabel *label;
     QLineEdit *txtIdEliminar;
     QPushButton *btnEliminar;
@@ -52,6 +51,7 @@ public:
     QLineEdit *txtCategoria;
     QLineEdit *txtModelo;
     QLineEdit *txtPrecio;
+    QPushButton *btnCrear;
     QWidget *tab_4;
     QPushButton *btncalcular;
     QLabel *lbltotal;
@@ -109,9 +109,6 @@ public:
         btnAgregar = new QPushButton(Articulos);
         btnAgregar->setObjectName("btnAgregar");
         btnAgregar->setGeometry(QRect(350, 270, 71, 31));
-        btnCrear = new QPushButton(Articulos);
-        btnCrear->setObjectName("btnCrear");
-        btnCrear->setGeometry(QRect(0, 260, 51, 21));
         label = new QLabel(Articulos);
         label->setObjectName("label");
         label->setGeometry(QRect(-10, 0, 768, 28));
@@ -152,6 +149,9 @@ public:
         txtPrecio = new QLineEdit(tab_3);
         txtPrecio->setObjectName("txtPrecio");
         txtPrecio->setGeometry(QRect(310, 220, 113, 22));
+        btnCrear = new QPushButton(tab_3);
+        btnCrear->setObjectName("btnCrear");
+        btnCrear->setGeometry(QRect(300, 280, 51, 21));
         CRUD->addTab(tab_3, QString());
         tab_4 = new QWidget();
         tab_4->setObjectName("tab_4");
@@ -272,7 +272,6 @@ public:
         label_2->setText(QCoreApplication::translate("dispositivos_electronicos", "Dispositivos Disponibles", nullptr));
         label_3->setText(QCoreApplication::translate("dispositivos_electronicos", "Dispositivos Seleccionados", nullptr));
         btnAgregar->setText(QCoreApplication::translate("dispositivos_electronicos", "Agregar", nullptr));
-        btnCrear->setText(QCoreApplication::translate("dispositivos_electronicos", "Crear", nullptr));
         label->setText(QCoreApplication::translate("dispositivos_electronicos", "<html><head/><body><p align=\"center\"><span style=\" font-weight:700; color:#ff0000;\">Tienda de Dispositivos Electr\303\263nicos</span></p></body></html>", nullptr));
         btnEliminar->setText(QCoreApplication::translate("dispositivos_electronicos", "Eliminar", nullptr));
         CRUD->setTabText(CRUD->indexOf(Articulos), QCoreApplication::translate("dispositivos_electronicos", "Tab 1", nullptr));
@@ -280,6 +279,7 @@ public:
         label_5->setText(QCoreApplication::translate("dispositivos_electronicos", "Categor\303\255a", nullptr));
         label_6->setText(QCoreApplication::translate("dispositivos_electronicos", "Modelo", nullptr));
         label_7->setText(QCoreApplication::translate("dispositivos_electronicos", "Precio", nullptr));
+        btnCrear->setText(QCoreApplication::translate("dispositivos_electronicos", "Crear", nullptr));
         CRUD->setTabText(CRUD->indexOf(tab_3), QCoreApplication::translate("dispositivos_electronicos", "Page", nullptr));
         btncalcular->setText(QCoreApplication::translate("dispositivos_electronicos", "Calcular  Total", nullptr));
         lbltotal->setText(QCoreApplication::translate("dispositivos_electronicos", "Valor de pago", nullptr));

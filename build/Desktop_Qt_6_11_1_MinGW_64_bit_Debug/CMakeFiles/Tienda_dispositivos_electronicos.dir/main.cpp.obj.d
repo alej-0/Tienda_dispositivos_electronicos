@@ -1,8 +1,9 @@
 CMakeFiles/Tienda_dispositivos_electronicos.dir/main.cpp.obj: \
  C:\Users\hp\Documents\Archivos\ Gabriel\Tienda_dispositivos_electronicos\main.cpp \
  C:\Users\hp\Documents\Archivos\ Gabriel\Tienda_dispositivos_electronicos\dispositivos_electronicos.h \
- C:/Qt/6.11.1/mingw_64/include/QtWidgets/QMainWindow \
- C:/Qt/6.11.1/mingw_64/include/QtWidgets/qmainwindow.h \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/QTreeWidgetItem \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qtreewidget.h \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qtreeview.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qtguiglobal.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/qglobal.h \
@@ -156,6 +157,9 @@ CMakeFiles/Tienda_dispositivos_electronicos.dir/main.cpp.obj: \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qtguiexports.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qtwidgets-config.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qtwidgetsexports.h \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qabstractitemview.h \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qabstractscrollarea.h \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qframe.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qwidget.h \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qwindowdefs.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/qobjectdefs.h \
@@ -385,7 +389,23 @@ CMakeFiles/Tienda_dispositivos_electronicos.dir/main.cpp.obj: \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qsizepolicy.h \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qcursor.h \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qbitmap.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/qabstractitemmodel.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/qitemselectionmodel.h \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qabstractitemdelegate.h \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qstyleoption.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/qlocale.h \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qabstractspinbox.h \
+ C:/Qt/6.11.1/mingw_64/include/QtGui/qvalidator.h \
+ C:/Qt/6.11.1/mingw_64/include/QtCore/qregularexpression.h \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qslider.h \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qabstractslider.h \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qstyle.h \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qtabbar.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qtabwidget.h \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qrubberband.h \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qtreewidgetitemiterator.h \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/QMainWindow \
+ C:/Qt/6.11.1/mingw_64/include/QtWidgets/qmainwindow.h \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/QApplication \
  C:/Qt/6.11.1/mingw_64/include/QtWidgets/qapplication.h \
  C:/Qt/6.11.1/mingw_64/include/QtCore/qcoreapplication.h \
@@ -398,5 +418,4 @@ CMakeFiles/Tienda_dispositivos_electronicos.dir/main.cpp.obj: \
  C:/Qt/6.11.1/mingw_64/include/QtCore/qcoreapplication_platform.h \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qguiapplication.h \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qinputmethod.h \
- C:/Qt/6.11.1/mingw_64/include/QtCore/qlocale.h \
  C:/Qt/6.11.1/mingw_64/include/QtGui/qguiapplication_platform.h

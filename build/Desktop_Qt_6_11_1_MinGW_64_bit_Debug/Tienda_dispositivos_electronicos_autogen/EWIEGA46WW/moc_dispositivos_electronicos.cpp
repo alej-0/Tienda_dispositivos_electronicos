@@ -44,7 +44,11 @@ template <> constexpr inline auto dispositivos_electronicos::qt_create_metaobjec
         "on_btncalcular_clicked",
         "on_btnpagar_clicked",
         "on_btnCrear_clicked",
-        "on_btnEliminar_clicked"
+        "on_btnEliminar_clicked",
+        "on_tablaDisponibles_itemClicked",
+        "QTreeWidgetItem*",
+        "item",
+        "column"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -58,6 +62,10 @@ template <> constexpr inline auto dispositivos_electronicos::qt_create_metaobjec
         QtMocHelpers::SlotData<void()>(5, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'on_btnEliminar_clicked'
         QtMocHelpers::SlotData<void()>(6, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'on_tablaDisponibles_itemClicked'
+        QtMocHelpers::SlotData<void(QTreeWidgetItem *, int)>(7, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { 0x80000000 | 8, 9 }, { QMetaType::Int, 10 },
+        }}),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -86,10 +94,10 @@ void dispositivos_electronicos::qt_static_metacall(QObject *_o, QMetaObject::Cal
         case 2: _t->on_btnpagar_clicked(); break;
         case 3: _t->on_btnCrear_clicked(); break;
         case 4: _t->on_btnEliminar_clicked(); break;
+        case 5: _t->on_tablaDisponibles_itemClicked((*reinterpret_cast<std::add_pointer_t<QTreeWidgetItem*>>(_a[1])),(*reinterpret_cast<std::add_pointer_t<int>>(_a[2]))); break;
         default: ;
         }
     }
-    (void)_a;
 }
 
 const QMetaObject *dispositivos_electronicos::metaObject() const
@@ -111,14 +119,14 @@ int dispositivos_electronicos::qt_metacall(QMetaObject::Call _c, int _id, void *
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 5)
+        if (_id < 6)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 5;
+        _id -= 6;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 5)
+        if (_id < 6)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 5;
+        _id -= 6;
     }
     return _id;
 }

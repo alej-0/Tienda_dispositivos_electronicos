@@ -179,3 +179,11 @@ void dispositivos_electronicos::on_btnEliminar_clicked()
         QMessageBox::warning(this, "Error", "No se encontró ningún producto con ese ID.");
     }
 }
+
+void dispositivos_electronicos::on_tablaDisponibles_itemClicked(QTreeWidgetItem *item, int column)
+{
+    if (item) {
+        ui->txtIdEliminar->setText(item->text(0));
+    }
+}
+

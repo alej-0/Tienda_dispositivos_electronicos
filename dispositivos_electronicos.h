@@ -1,6 +1,6 @@
 #ifndef DISPOSITIVOS_ELECTRONICOS_H
 #define DISPOSITIVOS_ELECTRONICOS_H
-
+#include <QTreeWidgetItem>
 #include <QMainWindow>
 
 QT_BEGIN_NAMESPACE
@@ -27,6 +27,8 @@ private slots:
     void on_btnCrear_clicked();
 
     void on_btnEliminar_clicked();
+
+    void on_tablaDisponibles_itemClicked(QTreeWidgetItem *item, int column);
 
 private:
     Ui::dispositivos_electronicos *ui;
