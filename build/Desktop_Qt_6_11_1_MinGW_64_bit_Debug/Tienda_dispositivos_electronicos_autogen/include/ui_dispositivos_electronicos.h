@@ -53,6 +53,7 @@ public:
     QLineEdit *txtPrecio;
     QPushButton *btnCrear;
     QLabel *label_8;
+    QPushButton *btnActualizar;
     QWidget *tab_4;
     QPushButton *btncalcular;
     QLabel *lbltotal;
@@ -176,11 +177,14 @@ public:
         txtPrecio->setGeometry(QRect(310, 220, 113, 22));
         btnCrear = new QPushButton(tab_3);
         btnCrear->setObjectName("btnCrear");
-        btnCrear->setGeometry(QRect(300, 280, 51, 21));
+        btnCrear->setGeometry(QRect(240, 280, 51, 21));
         label_8 = new QLabel(tab_3);
         label_8->setObjectName("label_8");
         label_8->setGeometry(QRect(0, 20, 768, 28));
         label_8->setFont(font);
+        btnActualizar = new QPushButton(tab_3);
+        btnActualizar->setObjectName("btnActualizar");
+        btnActualizar->setGeometry(QRect(360, 280, 75, 24));
         CRUD->addTab(tab_3, QString());
         tab_4 = new QWidget();
         tab_4->setObjectName("tab_4");
@@ -314,6 +318,7 @@ public:
         label_7->setText(QCoreApplication::translate("dispositivos_electronicos", "Precio", nullptr));
         btnCrear->setText(QCoreApplication::translate("dispositivos_electronicos", "Crear", nullptr));
         label_8->setText(QCoreApplication::translate("dispositivos_electronicos", "<html><head/><body><p align=\"center\"><span style=\" color:#ff0000;\">Agregar Dispositivos Electr\303\263nicos</span></p></body></html>", nullptr));
+        btnActualizar->setText(QCoreApplication::translate("dispositivos_electronicos", "Actualizar", nullptr));
         CRUD->setTabText(CRUD->indexOf(tab_3), QCoreApplication::translate("dispositivos_electronicos", "Agregar", nullptr));
         btncalcular->setText(QCoreApplication::translate("dispositivos_electronicos", "Calcular  Total", nullptr));
         lbltotal->setText(QCoreApplication::translate("dispositivos_electronicos", "Valor de pago", nullptr));

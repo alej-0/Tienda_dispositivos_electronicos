@@ -330,7 +330,7 @@
       </widget>
       <widget class="QWidget" name="tab_3">
        <attribute name="title">
-        <string>Agregar</string>
+        <string>Agregar y Actualizar</string>
        </attribute>
        <widget class="QLabel" name="label_4">
         <property name="geometry">
@@ -427,7 +427,7 @@
        <widget class="QPushButton" name="btnCrear">
         <property name="geometry">
          <rect>
-          <x>300</x>
+          <x>240</x>
           <y>280</y>
           <width>51</width>
           <height>21</height>
@@ -454,6 +454,19 @@
         </property>
         <property name="text">
          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Agregar Dispositivos Electrónicos&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="btnActualizar">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>280</y>
+          <width>75</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Actualizar</string>
         </property>
        </widget>
       </widget>

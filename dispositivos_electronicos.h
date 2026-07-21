@@ -31,6 +31,8 @@ private slots:
     void on_tablaDisponibles_itemClicked(QTreeWidgetItem *item, int column);
 
 
+    void on_btnActualizar_clicked();
+
 private:
     Ui::dispositivos_electronicos *ui;
     void cargarInventario();

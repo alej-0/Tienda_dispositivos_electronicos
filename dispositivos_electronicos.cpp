@@ -91,10 +91,20 @@ void dispositivos_electronicos::on_btnCrear_clicked()
     QString precio = ui->txtPrecio->text();
 
 
-    if (id.isEmpty() || categoria.isEmpty() || modelo.isEmpty() || precio.isEmpty()) {
+    if (id.isEmpty() or categoria.isEmpty() or modelo.isEmpty() or precio.isEmpty()) {
         QMessageBox::warning(this, "Aviso", "Por favor llena todos los campos.");
         return;
     }
+
+    for (int i = 0; i < ui->tablaDisponibles->topLevelItemCount(); ++i) {
+        QTreeWidgetItem *item = ui->tablaDisponibles->topLevelItem(i);
+
+        if (id == item->text(0)) {
+            QMessageBox::warning(this, "Error", "El ID ya está registrado.");
+            return;
+        }
+    }
+
 
     QFile archivo("inventario.txt");
     if (archivo.open(QIODevice::Append | QIODevice::Text)) {
@@ -161,32 +171,23 @@ void dispositivos_electronicos::on_btnEliminar_clicked()
         return;
     }
 
-    QString textoEliminar = itemSeleccionado->text();
+    // Eliminar de la lista visual
     delete itemSeleccionado;
 
+    // Reescribir el archivo carrito.txt con los elementos que quedan en el listWidget
     QFile archivo("carrito.txt");
-    QStringList lineasRestantes;
-
-    if (archivo.open(QIODevice::ReadOnly | QIODevice::Text)) {
-        QTextStream entrada(&archivo);
-        while (!entrada.atEnd()) {
-            QString linea = entrada.readLine();
-            if (linea != textoEliminar) {
-                lineasRestantes.append(linea);
-            }
-        }
-        archivo.close();
-    }
-
     if (archivo.open(QIODevice::WriteOnly | QIODevice::Text)) {
         QTextStream salida(&archivo);
-        for (const QString &l : lineasRestantes) {
-            salida << l << "\n";
-        }
-        archivo.close();
-    }
 
-    QMessageBox::information(this, "Éxito", "Producto eliminado del carrito correctamente.");
+        for (int i = 0; i < ui->listWidget->count(); ++i) {
+            salida << ui->listWidget->item(i)->text() << "\n";
+        }
+
+        archivo.close();
+        QMessageBox::information(this, "Éxito", "Producto eliminado del carrito correctamente.");
+    } else {
+        QMessageBox::warning(this, "Error", "No se pudo actualizar el archivo de carrito.");
+    }
 }
 
 void dispositivos_electronicos::on_tablaDisponibles_itemClicked(QTreeWidgetItem *, int)
@@ -195,4 +196,74 @@ void dispositivos_electronicos::on_tablaDisponibles_itemClicked(QTreeWidgetItem 
 }
 
 
+void dispositivos_electronicos::on_btnActualizar_clicked()
+{
+    QString id = ui->txtId->text();
+    QString categoria = ui->txtCategoria->text();
+    QString modelo = ui->txtModelo->text();
+    QString precio = ui->txtPrecio->text();
+
+
+    if (id.isEmpty() or categoria.isEmpty() or modelo.isEmpty() or precio.isEmpty()) {
+        QMessageBox::warning(this, "Aviso", "Por favor llena todos los campos.");
+        return;
+    }
+
+    if (id=="" or id==" " or categoria=="" or categoria==" " or precio=="" or precio==" ") {
+        QMessageBox::warning(this, "Error", "No se permite espacios en blanco");
+        return;
+    }
+
+    bool encontrado = false;
+    for (int i = 0; i < ui->tablaDisponibles->topLevelItemCount(); ++i) {
+        QTreeWidgetItem *item = ui->tablaDisponibles->topLevelItem(i);
+
+        if (id == item->text(0)) {
+            // 1. Se actualiza en la tabla visual
+            item->setText(1, categoria);
+            item->setText(2, modelo);
+            item->setText(3, precio);
+            encontrado = true;
+            break;
+        }
+    }
+
+    if (encontrado) {
+        QFile archivo("inventario.txt");
+        if (archivo.open(QIODevice::WriteOnly | QIODevice::Truncate | QIODevice::Text)) {
+            QTextStream salida(&archivo);
+
+            for (int i = 0; i < ui->tablaDisponibles->topLevelItemCount(); ++i) {
+                QTreeWidgetItem *it = ui->tablaDisponibles->topLevelItem(i);
+                salida << it->text(0) << ","
+                       << it->text(1) << ","
+                       << it->text(2) << ","
+                       << it->text(3) << "\n";
+            }
+            archivo.close();
+            QMessageBox::information(this, "Éxito", "Producto actualizado correctamente.");
+        } else {
+            QMessageBox::warning(this, "Error", "No se pudo abrir el archivo para actualizar.");
+        }
+    } else {
+        QFile archivo("inventario.txt");
+        if (archivo.open(QIODevice::Append | QIODevice::Text)) {
+            QTextStream salida(&archivo);
+            salida << id << "," << categoria << "," << modelo << "," << precio << "\n";
+            archivo.close();
+
+            QMessageBox::information(this, "Éxito", "Producto registrado correctamente.");
+
+            cargarInventario();
+        } else {
+            QMessageBox::warning(this, "Error", "No se pudo abrir el archivo de texto.");
+            return;
+        }
+    }
+
+    ui->txtId->clear();
+    ui->txtCategoria->clear();
+    ui->txtModelo->clear();
+    ui->txtPrecio->clear();
+}
 

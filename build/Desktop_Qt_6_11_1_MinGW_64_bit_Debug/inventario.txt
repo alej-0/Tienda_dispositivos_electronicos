@@ -1,5 +1,5 @@
-1,Accesorios,Cable USB-C Carga Rápida,5
-2,Audio,Audífonos Bluetooth In-Ear,25
+1,123,sdas,45
+2,asddafas,dfsfd,654
 3,Almacenamiento,Memoria USB 64GB Kingston,12
 4,Periféricos,Mouse Inalámbrico Logitech,15
 5,Periféricos,Teclado Mecánico Redragon,45
