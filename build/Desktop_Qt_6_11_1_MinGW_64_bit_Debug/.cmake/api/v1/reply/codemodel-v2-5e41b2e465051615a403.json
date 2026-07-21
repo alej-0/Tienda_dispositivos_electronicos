@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "Tienda_dispositivos_electronicos::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-Tienda_dispositivos_electronicos-Debug-cc8992266806b77f0095.json",
+					"jsonFile" : "target-Tienda_dispositivos_electronicos-Debug-72e7cfb901d64b8394d8.json",
 					"name" : "Tienda_dispositivos_electronicos",
 					"projectIndex" : 0
 				},
@@ -68,8 +68,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/hp/Documents/Archivos Gabriel/Tienda_dispositivos_electronicos/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug",
-		"source" : "C:/Users/hp/Documents/Archivos Gabriel/Tienda_dispositivos_electronicos"
+		"build" : "C:/Users/DELL/Desktop/Tienda_dispositivos_electronicos/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug",
+		"source" : "C:/Users/DELL/Desktop/Tienda_dispositivos_electronicos"
 	},
 	"version" : 
 	{

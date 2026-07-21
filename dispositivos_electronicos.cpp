@@ -29,6 +29,12 @@ void dispositivos_electronicos::on_btnAgregar_clicked()
         QString textoParaLista = id + " | " + categoria + " - " + modelo + " | $" + precio;
 
         ui->listWidget->addItem(textoParaLista);
+        QFile archivo("carrito.txt");
+        if (archivo.open(QIODevice::Append | QIODevice::Text)) {
+            QTextStream salida(&archivo);
+            salida << textoParaLista << "\n";
+            archivo.close();
+        }
     } else {
         QMessageBox::warning(this, "Advertencia", "Por favor, selecciona un dispositivo de la lista primero.");
     }
@@ -71,6 +77,10 @@ void dispositivos_electronicos::on_btnpagar_clicked()
 
     ui->listWidget->clear();
     ui->lbltotal->setText("Total a pagar: $0.00");
+    QFile archivo("carrito.txt");
+    if (archivo.open(QIODevice::WriteOnly | QIODevice::Text)) {
+        archivo.close();
+    }
 }
 
 void dispositivos_electronicos::on_btnCrear_clicked()
@@ -86,11 +96,9 @@ void dispositivos_electronicos::on_btnCrear_clicked()
         return;
     }
 
-
     QFile archivo("inventario.txt");
     if (archivo.open(QIODevice::Append | QIODevice::Text)) {
         QTextStream salida(&archivo);
-
 
         salida << id << "," << categoria << "," << modelo << "," << precio << "\n";
         archivo.close();
@@ -108,11 +116,22 @@ void dispositivos_electronicos::on_btnCrear_clicked()
 
 void dispositivos_electronicos::cargarInventario()
 {
+    QFile archivo("inventario.txt");
+
+    if (archivo.size() == 0) {
+        archivo.open(QIODevice::WriteOnly | QIODevice::Text);
+        QTextStream salida(&archivo);
+
+        for (int i = 0; i < ui->tablaDisponibles->topLevelItemCount(); ++i) {
+            QTreeWidgetItem *item = ui->tablaDisponibles->topLevelItem(i);
+            salida << item->text(0) << "," << item->text(1) << "," << item->text(2) << "," << item->text(3) << "\n";
+        }
+        archivo.close();
+        return;
+    }
 
     ui->tablaDisponibles->clear();
 
-
-    QFile archivo("inventario.txt");
     if (archivo.open(QIODevice::ReadOnly | QIODevice::Text)) {
         QTextStream entrada(&archivo);
 
@@ -135,55 +154,45 @@ void dispositivos_electronicos::cargarInventario()
 
 void dispositivos_electronicos::on_btnEliminar_clicked()
 {
-    QString idBuscado = ui->txtIdEliminar->text();
+    QListWidgetItem *itemSeleccionado = ui->listWidget->currentItem();
 
-    if (idBuscado.isEmpty()) {
-        QMessageBox::warning(this, "Aviso", "Por favor ingresa el ID del producto a eliminar.");
+    if (!itemSeleccionado) {
+        QMessageBox::warning(this, "Aviso", "Por favor selecciona un producto del carrito para eliminar.");
         return;
     }
 
-    QFile archivo("inventario.txt");
+    QString textoEliminar = itemSeleccionado->text();
+    delete itemSeleccionado;
+
+    QFile archivo("carrito.txt");
     QStringList lineasRestantes;
-    bool encontrado = false;
 
     if (archivo.open(QIODevice::ReadOnly | QIODevice::Text)) {
         QTextStream entrada(&archivo);
         while (!entrada.atEnd()) {
             QString linea = entrada.readLine();
-            QStringList datos = linea.split(",");
-
-            if (datos.size() > 0 && datos[0] == idBuscado) {
-                encontrado = true;
-            } else {
+            if (linea != textoEliminar) {
                 lineasRestantes.append(linea);
             }
         }
         archivo.close();
     }
 
-    if (encontrado) {
-        QFile archivoNuevo("inventario.txt");
-        if (archivoNuevo.open(QIODevice::WriteOnly | QIODevice::Text)) {
-            QTextStream salida(&archivoNuevo);
-            for (const QString& l : lineasRestantes) {
-                salida << l << "\n";
-            }
-            archivoNuevo.close();
+    if (archivo.open(QIODevice::WriteOnly | QIODevice::Text)) {
+        QTextStream salida(&archivo);
+        for (const QString &l : lineasRestantes) {
+            salida << l << "\n";
         }
-
-        QMessageBox::information(this, "Éxito", "Producto eliminado correctamente.");
-
-        cargarInventario();
-        ui->txtIdEliminar->clear();
-    } else {
-        QMessageBox::warning(this, "Error", "No se encontró ningún producto con ese ID.");
+        archivo.close();
     }
+
+    QMessageBox::information(this, "Éxito", "Producto eliminado del carrito correctamente.");
 }
 
-void dispositivos_electronicos::on_tablaDisponibles_itemClicked(QTreeWidgetItem *item, int column)
+void dispositivos_electronicos::on_tablaDisponibles_itemClicked(QTreeWidgetItem *, int)
 {
-    if (item) {
-        ui->txtIdEliminar->setText(item->text(0));
-    }
+    ui->listWidget->clearSelection();
 }
+
+
 

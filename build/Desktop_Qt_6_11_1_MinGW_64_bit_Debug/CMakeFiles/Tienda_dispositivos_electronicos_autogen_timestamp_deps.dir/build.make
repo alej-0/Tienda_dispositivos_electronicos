@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Qt\Tools\CMake_64\bin\cmake.exe
+CMAKE_COMMAND = E:\QtCreator\Qt\Tools\CMake_64\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f
+RM = E:\QtCreator\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos"
+CMAKE_SOURCE_DIR = C:\Users\DELL\Desktop\Tienda_dispositivos_electronicos
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug"
+CMAKE_BINARY_DIR = C:\Users\DELL\Desktop\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug
 
 # Utility rule file for Tienda_dispositivos_electronicos_autogen_timestamp_deps.
 
@@ -77,6 +77,6 @@ CMakeFiles/Tienda_dispositivos_electronicos_autogen_timestamp_deps.dir/clean:
 .PHONY : CMakeFiles/Tienda_dispositivos_electronicos_autogen_timestamp_deps.dir/clean
 
 CMakeFiles/Tienda_dispositivos_electronicos_autogen_timestamp_deps.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos" "C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos" "C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug" "C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug" "C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles\Tienda_dispositivos_electronicos_autogen_timestamp_deps.dir\DependInfo.cmake" "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\DELL\Desktop\Tienda_dispositivos_electronicos C:\Users\DELL\Desktop\Tienda_dispositivos_electronicos C:\Users\DELL\Desktop\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug C:\Users\DELL\Desktop\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug C:\Users\DELL\Desktop\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles\Tienda_dispositivos_electronicos_autogen_timestamp_deps.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Tienda_dispositivos_electronicos_autogen_timestamp_deps.dir/depend
 

@@ -25,350 +25,312 @@
       </property>
      </widget>
     </item>
-    <item row="1" column="0">
+    <item row="6" column="0">
      <widget class="QTabWidget" name="CRUD">
       <property name="currentIndex">
        <number>0</number>
       </property>
       <widget class="QWidget" name="Articulos">
        <attribute name="title">
-        <string>Tab 1</string>
+        <string>Articulos</string>
        </attribute>
-       <widget class="QTreeWidget" name="tablaDisponibles">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>50</y>
-          <width>351</width>
-          <height>211</height>
-         </rect>
-        </property>
-        <column>
-         <property name="text">
-          <string>ID</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>Categoria</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>Modelo</string>
-         </property>
-        </column>
-        <column>
-         <property name="text">
-          <string>Precio</string>
-         </property>
-        </column>
-        <item>
-         <property name="text">
-          <string>1</string>
-         </property>
-         <property name="text">
-          <string>Accesorios</string>
-         </property>
-         <property name="text">
-          <string>Cable USB-C Carga Rápida</string>
-         </property>
-         <property name="text">
-          <string>5</string>
-         </property>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0" colspan="4">
+         <widget class="QLabel" name="label">
+          <property name="font">
+           <font>
+            <pointsize>16</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:700; color:#ff0000;&quot;&gt;Tienda de Dispositivos Electrónicos&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
         </item>
-        <item>
-         <property name="text">
-          <string>2</string>
-         </property>
-         <property name="text">
-          <string>Audio</string>
-         </property>
-         <property name="text">
-          <string>Audífonos Bluetooth In-Ear</string>
-         </property>
-         <property name="text">
-          <string>25</string>
-         </property>
+        <item row="1" column="0" colspan="2">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Dispositivos Disponibles</string>
+          </property>
+         </widget>
         </item>
-        <item>
-         <property name="text">
-          <string>3</string>
-         </property>
-         <property name="text">
-          <string>Almacenamiento</string>
-         </property>
-         <property name="text">
-          <string>Memoria USB 64GB Kingston</string>
-         </property>
-         <property name="text">
-          <string>12</string>
-         </property>
+        <item row="1" column="3">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Dispositivos Seleccionados</string>
+          </property>
+         </widget>
         </item>
-        <item>
-         <property name="text">
-          <string>4</string>
-         </property>
-         <property name="text">
-          <string>Periféricos</string>
-         </property>
-         <property name="text">
-          <string>Mouse Inalámbrico Logitech</string>
-         </property>
-         <property name="text">
-          <string>15</string>
-         </property>
+        <item row="2" column="0" colspan="2">
+         <widget class="QTreeWidget" name="tablaDisponibles">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Ignored" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <column>
+           <property name="text">
+            <string>ID</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Categoria</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Modelo</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>Precio</string>
+           </property>
+          </column>
+          <item>
+           <property name="text">
+            <string>1</string>
+           </property>
+           <property name="text">
+            <string>Accesorios</string>
+           </property>
+           <property name="text">
+            <string>Cable USB-C Carga Rápida</string>
+           </property>
+           <property name="text">
+            <string>5</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2</string>
+           </property>
+           <property name="text">
+            <string>Audio</string>
+           </property>
+           <property name="text">
+            <string>Audífonos Bluetooth In-Ear</string>
+           </property>
+           <property name="text">
+            <string>25</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>3</string>
+           </property>
+           <property name="text">
+            <string>Almacenamiento</string>
+           </property>
+           <property name="text">
+            <string>Memoria USB 64GB Kingston</string>
+           </property>
+           <property name="text">
+            <string>12</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4</string>
+           </property>
+           <property name="text">
+            <string>Periféricos</string>
+           </property>
+           <property name="text">
+            <string>Mouse Inalámbrico Logitech</string>
+           </property>
+           <property name="text">
+            <string>15</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>5</string>
+           </property>
+           <property name="text">
+            <string>Periféricos</string>
+           </property>
+           <property name="text">
+            <string>Teclado Mecánico Redragon</string>
+           </property>
+           <property name="text">
+            <string>45</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>6</string>
+           </property>
+           <property name="text">
+            <string>Accesorios</string>
+           </property>
+           <property name="text">
+            <string>Cargador de Pared 67W</string>
+           </property>
+           <property name="text">
+            <string>20</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>7</string>
+           </property>
+           <property name="text">
+            <string>Pantallas</string>
+           </property>
+           <property name="text">
+            <string>Monitor Samsung 24&quot; FHD</string>
+           </property>
+           <property name="text">
+            <string>140</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8</string>
+           </property>
+           <property name="text">
+            <string>Telefonía</string>
+           </property>
+           <property name="text">
+            <string>Smartphone Poco F4 GT</string>
+           </property>
+           <property name="text">
+            <string>450</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>9</string>
+           </property>
+           <property name="text">
+            <string>Computación</string>
+           </property>
+           <property name="text">
+            <string>Laptop HP con Ryzen 5</string>
+           </property>
+           <property name="text">
+            <string>650</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>10</string>
+           </property>
+           <property name="text">
+            <string>Almacenamiento</string>
+           </property>
+           <property name="text">
+            <string>Disco Duro Externo 1TB</string>
+           </property>
+           <property name="text">
+            <string>65</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>11</string>
+           </property>
+           <property name="text">
+            <string>Audio</string>
+           </property>
+           <property name="text">
+            <string>Parlante Portátil JBL Go 3</string>
+           </property>
+           <property name="text">
+            <string>40</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>12</string>
+           </property>
+           <property name="text">
+            <string>Wearables</string>
+           </property>
+           <property name="text">
+            <string>Smartwatch Xiaomi Band 8</string>
+           </property>
+           <property name="text">
+            <string>50</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>13</string>
+           </property>
+           <property name="text">
+            <string>Accesorios</string>
+           </property>
+           <property name="text">
+            <string>Batería Portátil 10000mAh</string>
+           </property>
+           <property name="text">
+            <string>25</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>14</string>
+           </property>
+           <property name="text">
+            <string>Redes</string>
+           </property>
+           <property name="text">
+            <string>Router Wi-Fi TP-Link</string>
+           </property>
+           <property name="text">
+            <string>45</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>15</string>
+           </property>
+           <property name="text">
+            <string>Oficina</string>
+           </property>
+           <property name="text">
+            <string>Impresora Multifunción Epson</string>
+           </property>
+           <property name="text">
+            <string>210</string>
+           </property>
+          </item>
+         </widget>
         </item>
-        <item>
-         <property name="text">
-          <string>5</string>
-         </property>
-         <property name="text">
-          <string>Periféricos</string>
-         </property>
-         <property name="text">
-          <string>Teclado Mecánico Redragon</string>
-         </property>
-         <property name="text">
-          <string>45</string>
-         </property>
+        <item row="2" column="2" colspan="2">
+         <widget class="QListWidget" name="listWidget">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
         </item>
-        <item>
-         <property name="text">
-          <string>6</string>
-         </property>
-         <property name="text">
-          <string>Accesorios</string>
-         </property>
-         <property name="text">
-          <string>Cargador de Pared 67W</string>
-         </property>
-         <property name="text">
-          <string>20</string>
-         </property>
+        <item row="4" column="2">
+         <widget class="QPushButton" name="btnAgregar">
+          <property name="text">
+           <string>Agregar</string>
+          </property>
+         </widget>
         </item>
-        <item>
-         <property name="text">
-          <string>7</string>
-         </property>
-         <property name="text">
-          <string>Pantallas</string>
-         </property>
-         <property name="text">
-          <string>Monitor Samsung 24&quot; FHD</string>
-         </property>
-         <property name="text">
-          <string>140</string>
-         </property>
+        <item row="4" column="1">
+         <widget class="QPushButton" name="btnEliminar">
+          <property name="text">
+           <string>Eliminar</string>
+          </property>
+         </widget>
         </item>
-        <item>
-         <property name="text">
-          <string>8</string>
-         </property>
-         <property name="text">
-          <string>Telefonía</string>
-         </property>
-         <property name="text">
-          <string>Smartphone Poco F4 GT</string>
-         </property>
-         <property name="text">
-          <string>450</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>9</string>
-         </property>
-         <property name="text">
-          <string>Computación</string>
-         </property>
-         <property name="text">
-          <string>Laptop HP con Ryzen 5</string>
-         </property>
-         <property name="text">
-          <string>650</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>10</string>
-         </property>
-         <property name="text">
-          <string>Almacenamiento</string>
-         </property>
-         <property name="text">
-          <string>Disco Duro Externo 1TB</string>
-         </property>
-         <property name="text">
-          <string>65</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>11</string>
-         </property>
-         <property name="text">
-          <string>Audio</string>
-         </property>
-         <property name="text">
-          <string>Parlante Portátil JBL Go 3</string>
-         </property>
-         <property name="text">
-          <string>40</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>12</string>
-         </property>
-         <property name="text">
-          <string>Wearables</string>
-         </property>
-         <property name="text">
-          <string>Smartwatch Xiaomi Band 8</string>
-         </property>
-         <property name="text">
-          <string>50</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>13</string>
-         </property>
-         <property name="text">
-          <string>Accesorios</string>
-         </property>
-         <property name="text">
-          <string>Batería Portátil 10000mAh</string>
-         </property>
-         <property name="text">
-          <string>25</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>14</string>
-         </property>
-         <property name="text">
-          <string>Redes</string>
-         </property>
-         <property name="text">
-          <string>Router Wi-Fi TP-Link</string>
-         </property>
-         <property name="text">
-          <string>45</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>15</string>
-         </property>
-         <property name="text">
-          <string>Oficina</string>
-         </property>
-         <property name="text">
-          <string>Impresora Multifunción Epson</string>
-         </property>
-         <property name="text">
-          <string>210</string>
-         </property>
-        </item>
-       </widget>
-       <widget class="QListWidget" name="listWidget">
-        <property name="geometry">
-         <rect>
-          <x>420</x>
-          <y>50</y>
-          <width>337</width>
-          <height>211</height>
-         </rect>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_2">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>30</y>
-          <width>338</width>
-          <height>16</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Dispositivos Disponibles</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_3">
-        <property name="geometry">
-         <rect>
-          <x>430</x>
-          <y>30</y>
-          <width>337</width>
-          <height>16</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Dispositivos Seleccionados</string>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="btnAgregar">
-        <property name="geometry">
-         <rect>
-          <x>350</x>
-          <y>270</y>
-          <width>71</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Agregar</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label">
-        <property name="geometry">
-         <rect>
-          <x>-10</x>
-          <y>0</y>
-          <width>768</width>
-          <height>28</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <pointsize>16</pointsize>
-          <bold>true</bold>
-         </font>
-        </property>
-        <property name="text">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:700; color:#ff0000;&quot;&gt;Tienda de Dispositivos Electrónicos&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-        </property>
-       </widget>
-       <widget class="QLineEdit" name="txtIdEliminar">
-        <property name="geometry">
-         <rect>
-          <x>90</x>
-          <y>300</y>
-          <width>113</width>
-          <height>22</height>
-         </rect>
-        </property>
-       </widget>
-       <widget class="QPushButton" name="btnEliminar">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>300</y>
-          <width>75</width>
-          <height>24</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Eliminar</string>
-        </property>
-       </widget>
+       </layout>
       </widget>
       <widget class="QWidget" name="tab_3">
        <attribute name="title">
-        <string>Page</string>
+        <string>Agregar</string>
        </attribute>
        <widget class="QLabel" name="label_4">
         <property name="geometry">
@@ -475,10 +437,29 @@
          <string>Crear</string>
         </property>
        </widget>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>20</y>
+          <width>768</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Agregar Dispositivos Electrónicos&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
       </widget>
       <widget class="QWidget" name="tab_4">
        <attribute name="title">
-        <string>Tab 2</string>
+        <string>Pagar</string>
        </attribute>
        <widget class="QPushButton" name="btncalcular">
         <property name="geometry">
@@ -517,6 +498,25 @@
         </property>
         <property name="text">
          <string>Pagar</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_9">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>20</y>
+          <width>768</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Factura&lt;/span&gt;&lt;/p&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
        </widget>
       </widget>

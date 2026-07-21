@@ -43,19 +43,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = C:\Qt\Tools\CMake_64\bin\cmake.exe
+CMAKE_COMMAND = E:\QtCreator\Qt\Tools\CMake_64\bin\cmake.exe
 
 # The command to remove a file.
-RM = C:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f
+RM = E:\QtCreator\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos"
+CMAKE_SOURCE_DIR = C:\Users\DELL\Desktop\Tienda_dispositivos_electronicos
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug"
+CMAKE_BINARY_DIR = C:\Users\DELL\Desktop\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Tienda_dispositivos_electronicos.dir/depend.make
@@ -68,57 +68,57 @@ include CMakeFiles/Tienda_dispositivos_electronicos.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Tienda_dispositivos_electronicos.dir/flags.make
 
-Tienda_dispositivos_electronicos_autogen/timestamp: C:/Qt/6.11.1/mingw_64/bin/moc.exe
-Tienda_dispositivos_electronicos_autogen/timestamp: C:/Qt/6.11.1/mingw_64/bin/uic.exe
+Tienda_dispositivos_electronicos_autogen/timestamp: E:/QtCreator/Qt/6.11.1/mingw_64/bin/moc.exe
+Tienda_dispositivos_electronicos_autogen/timestamp: E:/QtCreator/Qt/6.11.1/mingw_64/bin/uic.exe
 Tienda_dispositivos_electronicos_autogen/timestamp: CMakeFiles/Tienda_dispositivos_electronicos.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir="C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target Tienda_dispositivos_electronicos"
-	C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen "C:/Users/hp/Documents/Archivos Gabriel/Tienda_dispositivos_electronicos/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/CMakeFiles/Tienda_dispositivos_electronicos_autogen.dir/AutogenInfo.json" Debug
-	C:\Qt\Tools\CMake_64\bin\cmake.exe -E touch "C:/Users/hp/Documents/Archivos Gabriel/Tienda_dispositivos_electronicos/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/Tienda_dispositivos_electronicos_autogen/timestamp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=C:\Users\DELL\Desktop\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target Tienda_dispositivos_electronicos"
+	E:\QtCreator\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autogen C:/Users/DELL/Desktop/Tienda_dispositivos_electronicos/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/CMakeFiles/Tienda_dispositivos_electronicos_autogen.dir/AutogenInfo.json Debug
+	E:\QtCreator\Qt\Tools\CMake_64\bin\cmake.exe -E touch C:/Users/DELL/Desktop/Tienda_dispositivos_electronicos/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/Tienda_dispositivos_electronicos_autogen/timestamp
 
 CMakeFiles/Tienda_dispositivos_electronicos.dir/Tienda_dispositivos_electronicos_autogen/mocs_compilation.cpp.obj: CMakeFiles/Tienda_dispositivos_electronicos.dir/flags.make
 CMakeFiles/Tienda_dispositivos_electronicos.dir/Tienda_dispositivos_electronicos_autogen/mocs_compilation.cpp.obj: CMakeFiles/Tienda_dispositivos_electronicos.dir/includes_CXX.rsp
 CMakeFiles/Tienda_dispositivos_electronicos.dir/Tienda_dispositivos_electronicos_autogen/mocs_compilation.cpp.obj: Tienda_dispositivos_electronicos_autogen/mocs_compilation.cpp
 CMakeFiles/Tienda_dispositivos_electronicos.dir/Tienda_dispositivos_electronicos_autogen/mocs_compilation.cpp.obj: CMakeFiles/Tienda_dispositivos_electronicos.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Tienda_dispositivos_electronicos.dir/Tienda_dispositivos_electronicos_autogen/mocs_compilation.cpp.obj"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tienda_dispositivos_electronicos.dir/Tienda_dispositivos_electronicos_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\Tienda_dispositivos_electronicos.dir\Tienda_dispositivos_electronicos_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\Tienda_dispositivos_electronicos.dir\Tienda_dispositivos_electronicos_autogen\mocs_compilation.cpp.obj -c "C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\Tienda_dispositivos_electronicos_autogen\mocs_compilation.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\DELL\Desktop\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Tienda_dispositivos_electronicos.dir/Tienda_dispositivos_electronicos_autogen/mocs_compilation.cpp.obj"
+	E:\QtCreator\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tienda_dispositivos_electronicos.dir/Tienda_dispositivos_electronicos_autogen/mocs_compilation.cpp.obj -MF CMakeFiles\Tienda_dispositivos_electronicos.dir\Tienda_dispositivos_electronicos_autogen\mocs_compilation.cpp.obj.d -o CMakeFiles\Tienda_dispositivos_electronicos.dir\Tienda_dispositivos_electronicos_autogen\mocs_compilation.cpp.obj -c C:\Users\DELL\Desktop\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\Tienda_dispositivos_electronicos_autogen\mocs_compilation.cpp
 
 CMakeFiles/Tienda_dispositivos_electronicos.dir/Tienda_dispositivos_electronicos_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Tienda_dispositivos_electronicos.dir/Tienda_dispositivos_electronicos_autogen/mocs_compilation.cpp.i"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\Tienda_dispositivos_electronicos_autogen\mocs_compilation.cpp" > CMakeFiles\Tienda_dispositivos_electronicos.dir\Tienda_dispositivos_electronicos_autogen\mocs_compilation.cpp.i
+	E:\QtCreator\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\DELL\Desktop\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\Tienda_dispositivos_electronicos_autogen\mocs_compilation.cpp > CMakeFiles\Tienda_dispositivos_electronicos.dir\Tienda_dispositivos_electronicos_autogen\mocs_compilation.cpp.i
 
 CMakeFiles/Tienda_dispositivos_electronicos.dir/Tienda_dispositivos_electronicos_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Tienda_dispositivos_electronicos.dir/Tienda_dispositivos_electronicos_autogen/mocs_compilation.cpp.s"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\Tienda_dispositivos_electronicos_autogen\mocs_compilation.cpp" -o CMakeFiles\Tienda_dispositivos_electronicos.dir\Tienda_dispositivos_electronicos_autogen\mocs_compilation.cpp.s
+	E:\QtCreator\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\DELL\Desktop\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\Tienda_dispositivos_electronicos_autogen\mocs_compilation.cpp -o CMakeFiles\Tienda_dispositivos_electronicos.dir\Tienda_dispositivos_electronicos_autogen\mocs_compilation.cpp.s
 
 CMakeFiles/Tienda_dispositivos_electronicos.dir/main.cpp.obj: CMakeFiles/Tienda_dispositivos_electronicos.dir/flags.make
 CMakeFiles/Tienda_dispositivos_electronicos.dir/main.cpp.obj: CMakeFiles/Tienda_dispositivos_electronicos.dir/includes_CXX.rsp
-CMakeFiles/Tienda_dispositivos_electronicos.dir/main.cpp.obj: C:/Users/hp/Documents/Archivos\ Gabriel/Tienda_dispositivos_electronicos/main.cpp
+CMakeFiles/Tienda_dispositivos_electronicos.dir/main.cpp.obj: C:/Users/DELL/Desktop/Tienda_dispositivos_electronicos/main.cpp
 CMakeFiles/Tienda_dispositivos_electronicos.dir/main.cpp.obj: CMakeFiles/Tienda_dispositivos_electronicos.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Tienda_dispositivos_electronicos.dir/main.cpp.obj"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tienda_dispositivos_electronicos.dir/main.cpp.obj -MF CMakeFiles\Tienda_dispositivos_electronicos.dir\main.cpp.obj.d -o CMakeFiles\Tienda_dispositivos_electronicos.dir\main.cpp.obj -c "C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos\main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\DELL\Desktop\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Tienda_dispositivos_electronicos.dir/main.cpp.obj"
+	E:\QtCreator\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tienda_dispositivos_electronicos.dir/main.cpp.obj -MF CMakeFiles\Tienda_dispositivos_electronicos.dir\main.cpp.obj.d -o CMakeFiles\Tienda_dispositivos_electronicos.dir\main.cpp.obj -c C:\Users\DELL\Desktop\Tienda_dispositivos_electronicos\main.cpp
 
 CMakeFiles/Tienda_dispositivos_electronicos.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Tienda_dispositivos_electronicos.dir/main.cpp.i"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos\main.cpp" > CMakeFiles\Tienda_dispositivos_electronicos.dir\main.cpp.i
+	E:\QtCreator\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\DELL\Desktop\Tienda_dispositivos_electronicos\main.cpp > CMakeFiles\Tienda_dispositivos_electronicos.dir\main.cpp.i
 
 CMakeFiles/Tienda_dispositivos_electronicos.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Tienda_dispositivos_electronicos.dir/main.cpp.s"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos\main.cpp" -o CMakeFiles\Tienda_dispositivos_electronicos.dir\main.cpp.s
+	E:\QtCreator\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\DELL\Desktop\Tienda_dispositivos_electronicos\main.cpp -o CMakeFiles\Tienda_dispositivos_electronicos.dir\main.cpp.s
 
 CMakeFiles/Tienda_dispositivos_electronicos.dir/dispositivos_electronicos.cpp.obj: CMakeFiles/Tienda_dispositivos_electronicos.dir/flags.make
 CMakeFiles/Tienda_dispositivos_electronicos.dir/dispositivos_electronicos.cpp.obj: CMakeFiles/Tienda_dispositivos_electronicos.dir/includes_CXX.rsp
-CMakeFiles/Tienda_dispositivos_electronicos.dir/dispositivos_electronicos.cpp.obj: C:/Users/hp/Documents/Archivos\ Gabriel/Tienda_dispositivos_electronicos/dispositivos_electronicos.cpp
+CMakeFiles/Tienda_dispositivos_electronicos.dir/dispositivos_electronicos.cpp.obj: C:/Users/DELL/Desktop/Tienda_dispositivos_electronicos/dispositivos_electronicos.cpp
 CMakeFiles/Tienda_dispositivos_electronicos.dir/dispositivos_electronicos.cpp.obj: CMakeFiles/Tienda_dispositivos_electronicos.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Tienda_dispositivos_electronicos.dir/dispositivos_electronicos.cpp.obj"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tienda_dispositivos_electronicos.dir/dispositivos_electronicos.cpp.obj -MF CMakeFiles\Tienda_dispositivos_electronicos.dir\dispositivos_electronicos.cpp.obj.d -o CMakeFiles\Tienda_dispositivos_electronicos.dir\dispositivos_electronicos.cpp.obj -c "C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos\dispositivos_electronicos.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\DELL\Desktop\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Tienda_dispositivos_electronicos.dir/dispositivos_electronicos.cpp.obj"
+	E:\QtCreator\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Tienda_dispositivos_electronicos.dir/dispositivos_electronicos.cpp.obj -MF CMakeFiles\Tienda_dispositivos_electronicos.dir\dispositivos_electronicos.cpp.obj.d -o CMakeFiles\Tienda_dispositivos_electronicos.dir\dispositivos_electronicos.cpp.obj -c C:\Users\DELL\Desktop\Tienda_dispositivos_electronicos\dispositivos_electronicos.cpp
 
 CMakeFiles/Tienda_dispositivos_electronicos.dir/dispositivos_electronicos.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Tienda_dispositivos_electronicos.dir/dispositivos_electronicos.cpp.i"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos\dispositivos_electronicos.cpp" > CMakeFiles\Tienda_dispositivos_electronicos.dir\dispositivos_electronicos.cpp.i
+	E:\QtCreator\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\DELL\Desktop\Tienda_dispositivos_electronicos\dispositivos_electronicos.cpp > CMakeFiles\Tienda_dispositivos_electronicos.dir\dispositivos_electronicos.cpp.i
 
 CMakeFiles/Tienda_dispositivos_electronicos.dir/dispositivos_electronicos.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Tienda_dispositivos_electronicos.dir/dispositivos_electronicos.cpp.s"
-	C:\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos\dispositivos_electronicos.cpp" -o CMakeFiles\Tienda_dispositivos_electronicos.dir\dispositivos_electronicos.cpp.s
+	E:\QtCreator\Qt\Tools\mingw1310_64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\DELL\Desktop\Tienda_dispositivos_electronicos\dispositivos_electronicos.cpp -o CMakeFiles\Tienda_dispositivos_electronicos.dir\dispositivos_electronicos.cpp.s
 
 # Object files for target Tienda_dispositivos_electronicos
 Tienda_dispositivos_electronicos_OBJECTS = \
@@ -133,15 +133,15 @@ Tienda_dispositivos_electronicos.exe: CMakeFiles/Tienda_dispositivos_electronico
 Tienda_dispositivos_electronicos.exe: CMakeFiles/Tienda_dispositivos_electronicos.dir/main.cpp.obj
 Tienda_dispositivos_electronicos.exe: CMakeFiles/Tienda_dispositivos_electronicos.dir/dispositivos_electronicos.cpp.obj
 Tienda_dispositivos_electronicos.exe: CMakeFiles/Tienda_dispositivos_electronicos.dir/build.make
-Tienda_dispositivos_electronicos.exe: C:/Qt/6.11.1/mingw_64/lib/libQt6Widgets.a
-Tienda_dispositivos_electronicos.exe: C:/Qt/6.11.1/mingw_64/lib/libQt6Gui.a
-Tienda_dispositivos_electronicos.exe: C:/Qt/6.11.1/mingw_64/lib/libQt6Core.a
-Tienda_dispositivos_electronicos.exe: C:/Qt/6.11.1/mingw_64/lib/libQt6EntryPoint.a
+Tienda_dispositivos_electronicos.exe: E:/QtCreator/Qt/6.11.1/mingw_64/lib/libQt6Widgets.a
+Tienda_dispositivos_electronicos.exe: E:/QtCreator/Qt/6.11.1/mingw_64/lib/libQt6Gui.a
+Tienda_dispositivos_electronicos.exe: E:/QtCreator/Qt/6.11.1/mingw_64/lib/libQt6Core.a
+Tienda_dispositivos_electronicos.exe: E:/QtCreator/Qt/6.11.1/mingw_64/lib/libQt6EntryPoint.a
 Tienda_dispositivos_electronicos.exe: Tienda_dispositivos_electronicos.exe.manifest
 Tienda_dispositivos_electronicos.exe: CMakeFiles/Tienda_dispositivos_electronicos.dir/linkLibs.rsp
 Tienda_dispositivos_electronicos.exe: CMakeFiles/Tienda_dispositivos_electronicos.dir/objects1.rsp
 Tienda_dispositivos_electronicos.exe: CMakeFiles/Tienda_dispositivos_electronicos.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Tienda_dispositivos_electronicos.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\DELL\Desktop\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Tienda_dispositivos_electronicos.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Tienda_dispositivos_electronicos.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -153,6 +153,6 @@ CMakeFiles/Tienda_dispositivos_electronicos.dir/clean:
 .PHONY : CMakeFiles/Tienda_dispositivos_electronicos.dir/clean
 
 CMakeFiles/Tienda_dispositivos_electronicos.dir/depend: Tienda_dispositivos_electronicos_autogen/timestamp
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" "C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos" "C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos" "C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug" "C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug" "C:\Users\hp\Documents\Archivos Gabriel\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles\Tienda_dispositivos_electronicos.dir\DependInfo.cmake" "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\DELL\Desktop\Tienda_dispositivos_electronicos C:\Users\DELL\Desktop\Tienda_dispositivos_electronicos C:\Users\DELL\Desktop\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug C:\Users\DELL\Desktop\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug C:\Users\DELL\Desktop\Tienda_dispositivos_electronicos\build\Desktop_Qt_6_11_1_MinGW_64_bit_Debug\CMakeFiles\Tienda_dispositivos_electronicos.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/Tienda_dispositivos_electronicos.dir/depend
 

@@ -34,13 +34,13 @@ public:
     QFrame *line;
     QTabWidget *CRUD;
     QWidget *Articulos;
-    QTreeWidget *tablaDisponibles;
-    QListWidget *listWidget;
+    QGridLayout *gridLayout_2;
+    QLabel *label;
     QLabel *label_2;
     QLabel *label_3;
+    QTreeWidget *tablaDisponibles;
+    QListWidget *listWidget;
     QPushButton *btnAgregar;
-    QLabel *label;
-    QLineEdit *txtIdEliminar;
     QPushButton *btnEliminar;
     QWidget *tab_3;
     QLabel *label_4;
@@ -52,10 +52,12 @@ public:
     QLineEdit *txtModelo;
     QLineEdit *txtPrecio;
     QPushButton *btnCrear;
+    QLabel *label_8;
     QWidget *tab_4;
     QPushButton *btncalcular;
     QLabel *lbltotal;
     QPushButton *btnpagar;
+    QLabel *label_9;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *dispositivos_electronicos)
@@ -79,6 +81,27 @@ public:
         CRUD->setObjectName("CRUD");
         Articulos = new QWidget();
         Articulos->setObjectName("Articulos");
+        gridLayout_2 = new QGridLayout(Articulos);
+        gridLayout_2->setObjectName("gridLayout_2");
+        label = new QLabel(Articulos);
+        label->setObjectName("label");
+        QFont font;
+        font.setPointSize(16);
+        font.setBold(true);
+        label->setFont(font);
+
+        gridLayout_2->addWidget(label, 0, 0, 1, 4);
+
+        label_2 = new QLabel(Articulos);
+        label_2->setObjectName("label_2");
+
+        gridLayout_2->addWidget(label_2, 1, 0, 1, 2);
+
+        label_3 = new QLabel(Articulos);
+        label_3->setObjectName("label_3");
+
+        gridLayout_2->addWidget(label_3, 1, 3, 1, 1);
+
         tablaDisponibles = new QTreeWidget(Articulos);
         new QTreeWidgetItem(tablaDisponibles);
         new QTreeWidgetItem(tablaDisponibles);
@@ -96,32 +119,34 @@ public:
         new QTreeWidgetItem(tablaDisponibles);
         new QTreeWidgetItem(tablaDisponibles);
         tablaDisponibles->setObjectName("tablaDisponibles");
-        tablaDisponibles->setGeometry(QRect(0, 50, 351, 211));
+        QSizePolicy sizePolicy(QSizePolicy::Policy::Ignored, QSizePolicy::Policy::Expanding);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(tablaDisponibles->sizePolicy().hasHeightForWidth());
+        tablaDisponibles->setSizePolicy(sizePolicy);
+
+        gridLayout_2->addWidget(tablaDisponibles, 2, 0, 1, 2);
+
         listWidget = new QListWidget(Articulos);
         listWidget->setObjectName("listWidget");
-        listWidget->setGeometry(QRect(420, 50, 337, 211));
-        label_2 = new QLabel(Articulos);
-        label_2->setObjectName("label_2");
-        label_2->setGeometry(QRect(0, 30, 338, 16));
-        label_3 = new QLabel(Articulos);
-        label_3->setObjectName("label_3");
-        label_3->setGeometry(QRect(430, 30, 337, 16));
+        QSizePolicy sizePolicy1(QSizePolicy::Policy::Ignored, QSizePolicy::Policy::Ignored);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(listWidget->sizePolicy().hasHeightForWidth());
+        listWidget->setSizePolicy(sizePolicy1);
+
+        gridLayout_2->addWidget(listWidget, 2, 2, 1, 2);
+
         btnAgregar = new QPushButton(Articulos);
         btnAgregar->setObjectName("btnAgregar");
-        btnAgregar->setGeometry(QRect(350, 270, 71, 31));
-        label = new QLabel(Articulos);
-        label->setObjectName("label");
-        label->setGeometry(QRect(-10, 0, 768, 28));
-        QFont font;
-        font.setPointSize(16);
-        font.setBold(true);
-        label->setFont(font);
-        txtIdEliminar = new QLineEdit(Articulos);
-        txtIdEliminar->setObjectName("txtIdEliminar");
-        txtIdEliminar->setGeometry(QRect(90, 300, 113, 22));
+
+        gridLayout_2->addWidget(btnAgregar, 4, 2, 1, 1);
+
         btnEliminar = new QPushButton(Articulos);
         btnEliminar->setObjectName("btnEliminar");
-        btnEliminar->setGeometry(QRect(0, 300, 75, 24));
+
+        gridLayout_2->addWidget(btnEliminar, 4, 1, 1, 1);
+
         CRUD->addTab(Articulos, QString());
         tab_3 = new QWidget();
         tab_3->setObjectName("tab_3");
@@ -152,6 +177,10 @@ public:
         btnCrear = new QPushButton(tab_3);
         btnCrear->setObjectName("btnCrear");
         btnCrear->setGeometry(QRect(300, 280, 51, 21));
+        label_8 = new QLabel(tab_3);
+        label_8->setObjectName("label_8");
+        label_8->setGeometry(QRect(0, 20, 768, 28));
+        label_8->setFont(font);
         CRUD->addTab(tab_3, QString());
         tab_4 = new QWidget();
         tab_4->setObjectName("tab_4");
@@ -164,9 +193,13 @@ public:
         btnpagar = new QPushButton(tab_4);
         btnpagar->setObjectName("btnpagar");
         btnpagar->setGeometry(QRect(250, 140, 75, 24));
+        label_9 = new QLabel(tab_4);
+        label_9->setObjectName("label_9");
+        label_9->setGeometry(QRect(0, 20, 768, 28));
+        label_9->setFont(font);
         CRUD->addTab(tab_4, QString());
 
-        gridLayout->addWidget(CRUD, 1, 0, 1, 1);
+        gridLayout->addWidget(CRUD, 6, 0, 1, 1);
 
         dispositivos_electronicos->setCentralWidget(centralwidget);
         statusbar = new QStatusBar(dispositivos_electronicos);
@@ -184,6 +217,9 @@ public:
     void retranslateUi(QMainWindow *dispositivos_electronicos)
     {
         dispositivos_electronicos->setWindowTitle(QCoreApplication::translate("dispositivos_electronicos", "dispositivos_electronicos", nullptr));
+        label->setText(QCoreApplication::translate("dispositivos_electronicos", "<html><head/><body><p align=\"center\"><span style=\" font-weight:700; color:#ff0000;\">Tienda de Dispositivos Electr\303\263nicos</span></p></body></html>", nullptr));
+        label_2->setText(QCoreApplication::translate("dispositivos_electronicos", "Dispositivos Disponibles", nullptr));
+        label_3->setText(QCoreApplication::translate("dispositivos_electronicos", "Dispositivos Seleccionados", nullptr));
         QTreeWidgetItem *___qtreewidgetitem = tablaDisponibles->headerItem();
         ___qtreewidgetitem->setText(3, QCoreApplication::translate("dispositivos_electronicos", "Precio", nullptr));
         ___qtreewidgetitem->setText(2, QCoreApplication::translate("dispositivos_electronicos", "Modelo", nullptr));
@@ -269,22 +305,21 @@ public:
         ___qtreewidgetitem15->setText(0, QCoreApplication::translate("dispositivos_electronicos", "15", nullptr));
         tablaDisponibles->setSortingEnabled(__sortingEnabled);
 
-        label_2->setText(QCoreApplication::translate("dispositivos_electronicos", "Dispositivos Disponibles", nullptr));
-        label_3->setText(QCoreApplication::translate("dispositivos_electronicos", "Dispositivos Seleccionados", nullptr));
         btnAgregar->setText(QCoreApplication::translate("dispositivos_electronicos", "Agregar", nullptr));
-        label->setText(QCoreApplication::translate("dispositivos_electronicos", "<html><head/><body><p align=\"center\"><span style=\" font-weight:700; color:#ff0000;\">Tienda de Dispositivos Electr\303\263nicos</span></p></body></html>", nullptr));
         btnEliminar->setText(QCoreApplication::translate("dispositivos_electronicos", "Eliminar", nullptr));
-        CRUD->setTabText(CRUD->indexOf(Articulos), QCoreApplication::translate("dispositivos_electronicos", "Tab 1", nullptr));
+        CRUD->setTabText(CRUD->indexOf(Articulos), QCoreApplication::translate("dispositivos_electronicos", "Articulos", nullptr));
         label_4->setText(QCoreApplication::translate("dispositivos_electronicos", "ID del Producto", nullptr));
         label_5->setText(QCoreApplication::translate("dispositivos_electronicos", "Categor\303\255a", nullptr));
         label_6->setText(QCoreApplication::translate("dispositivos_electronicos", "Modelo", nullptr));
         label_7->setText(QCoreApplication::translate("dispositivos_electronicos", "Precio", nullptr));
         btnCrear->setText(QCoreApplication::translate("dispositivos_electronicos", "Crear", nullptr));
-        CRUD->setTabText(CRUD->indexOf(tab_3), QCoreApplication::translate("dispositivos_electronicos", "Page", nullptr));
+        label_8->setText(QCoreApplication::translate("dispositivos_electronicos", "<html><head/><body><p align=\"center\"><span style=\" color:#ff0000;\">Agregar Dispositivos Electr\303\263nicos</span></p></body></html>", nullptr));
+        CRUD->setTabText(CRUD->indexOf(tab_3), QCoreApplication::translate("dispositivos_electronicos", "Agregar", nullptr));
         btncalcular->setText(QCoreApplication::translate("dispositivos_electronicos", "Calcular  Total", nullptr));
         lbltotal->setText(QCoreApplication::translate("dispositivos_electronicos", "Valor de pago", nullptr));
         btnpagar->setText(QCoreApplication::translate("dispositivos_electronicos", "Pagar", nullptr));
-        CRUD->setTabText(CRUD->indexOf(tab_4), QCoreApplication::translate("dispositivos_electronicos", "Tab 2", nullptr));
+        label_9->setText(QCoreApplication::translate("dispositivos_electronicos", "<html><head/><body><p align=\"center\"><span style=\" color:#ff0000;\">Factura</span></p><p align=\"center\"><br/></p></body></html>", nullptr));
+        CRUD->setTabText(CRUD->indexOf(tab_4), QCoreApplication::translate("dispositivos_electronicos", "Pagar", nullptr));
     } // retranslateUi
 
 };
